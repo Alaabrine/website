@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import React from 'react';
+import * as mui from '@mui/material'
+import type { duration } from '@mui/material/styles';
+import * as motion from "motion/react-client"
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  // const square = <div
+  //   style={{
+  //       width: 100,
+  //       height: 100,
+  //       backgroundColor: "#98c379",
+  //       borderRadius: 5,
+  //   }}
+  // />
+  // box = <motion.div style={square}/>
+
+  const box = {
+    width: 100,
+    height: 100,
+    backgroundColor: "#ff0088",
+    borderRadius: 5,
+  }
+  const button = <button type="button"></button>
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <mui.Button>Hello world</mui.Button>
+    </div>
   )
 }
 
