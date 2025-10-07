@@ -1,0 +1,15 @@
+
+
+.body {
+    background-image: url("globebg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.homepage-article {
+	width: 90%;
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+}

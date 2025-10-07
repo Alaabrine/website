@@ -1,8 +1,22 @@
 import './App.css';
 import React from 'react';
 import * as mui from '@mui/material'
-import type { duration } from '@mui/material/styles';
+// import type { duration } from '@mui/material/styles';
 import * as motion from "motion/react-client"
+// import './components/ui/backgroundstyle.css';
+
+// Routing Imports
+import {createBrowserRouter} from "react-router-dom"
+
+
+
+// Pages: 
+import HomePage from './components/homepage/HomePage';
+
+const router = createBrowserRouter([
+  {path: "/" ,element: <App />},
+  {path: "/homepage", element: <HomePage/>},
+]);
 
 
 
@@ -29,7 +43,7 @@ function App() {
 
   return (
     <div>
-      <mui.Button>Hello world</mui.Button>
+      <mui.Button>Boiiii</mui.Button>
     </div>
   )
 }
